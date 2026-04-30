@@ -14,17 +14,17 @@
 
 <p align="center">
   <a href="#demo">📱 Demonstração</a> •
-  <a href="#seções">📌 Seções</a> •
+  <a href="#secoes">📌 Seções</a> •
   <a href="#tecnologias">🛠️ Tecnologias</a> •
   <a href="#como-executar">🚀 Como executar</a> •
-  <a href="#próximos-passos">🔮 Próximos passos</a>
+  <a href="#proximos-passos">🔮 Próximos passos</a>
 </p>
 
 <br/>
 
 ---
 
-## 🖼️ Preview
+## <span id="demo">🖼️ Demonstração</span>
 
 <p align="center">
   <img src="assets/preview.png" alt="Preview do FinControl" width="800" style="border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
@@ -48,7 +48,7 @@ Servir como **vitrine visual** e **pitch de produto** para o **FinControl** — 
 
 ---
 
-## 📌 Seções da Landing Page
+## <span id="secoes">📌 Seções da Landing Page</span>
 
 | Seção | Descrição |
 |-------|-----------|
@@ -76,7 +76,7 @@ As abas simulam a experiência de um sistema real:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## <span id="tecnologias">🛠️ Tecnologias Utilizadas</span>
 
 <div align="center">
 
@@ -95,7 +95,7 @@ As abas simulam a experiência de um sistema real:
 
 ---
 
-## 🚀 Como Executar
+## <span id="como-executar">🚀 Como Executar</span>
 
 ### 🔹 Opção 2 — VS Code (recomendado para desenvolvimento)
 
@@ -137,7 +137,7 @@ FinControl/
 
 ---
 
-## 🔮 Próximos Passos (em um produto real)
+## <span id="proximos-passos">🔮 Próximos Passos (em um produto real)</span>
 
 - [ ] Transformar as abas em páginas SPA com roteamento  
 - [ ] Implementar **autenticação** (login + perfis)  
