@@ -105,12 +105,13 @@ As abas simulam a experiência de um sistema real:
 ## 📁 Estrutura do Projeto
 
 ```text
-FinControl/
+/
 │
+├── docs/               # Documentação e proposta do projeto
+│   ├── FinControl.pdf
+│   └── TRABALHO_DE_APRESENTAÇÃO_DE_PROPOSTA_FinControl .pdf
 ├── index.html          # Página principal (landing completa + abas)
 ├── style.css           # Estilos complementares e animações
-├── assets/             # (opcional) Imagens, previews, ícones
-│   └── preview.png
 └── README.md           # Este arquivo
 ```
 
