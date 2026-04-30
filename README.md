@@ -5,10 +5,6 @@
   <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript">
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=28&duration=3000&pause=500&color=2D6A4F&center=true&vCenter=true&width=500&lines=FinControl;Gestão+Financeira+%2B+Projetos+%2B+Equipe;SaaS+na+nuvem" alt="Typing SVG" />
-</p>
-
 <h1 align="center">💰 FinControl — Landing Page de SaaS Financeiro</h1>
 
 <p align="center">
@@ -31,11 +27,10 @@
 ## 🖼️ Preview
 
 <p align="center">
-  <!-- Substitua pelo caminho da sua imagem -->
   <img src="assets/preview.png" alt="Preview do FinControl" width="800" style="border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
 </p>
 
-> 💡 *Se ainda não tem uma screenshot, você pode adicionar depois em `assets/preview.png` ou utilizar um serviço como [Picsum](https://picsum.photos/).*
+> 💡 *Se ainda não tem uma screenshot, você pode adicionar depois em `assets/preview.png`*
 
 ---
 
@@ -101,12 +96,6 @@ As abas simulam a experiência de um sistema real:
 ---
 
 ## 🚀 Como Executar
-
-### 🔹 Opção 1 — Direto no navegador
-
-```bash
-# Basta abrir o arquivo index.html no Chrome, Edge ou Firefox
-```
 
 ### 🔹 Opção 2 — VS Code (recomendado para desenvolvimento)
 
