@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>FinControl | Gestão Financeira + Projetos + Equipe em um só lugar</title>
+  <!-- Tailwind CSS + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter (moderna) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2 group cursor-pointer">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-purple-600 flex items-center justify-center shadow-lg group-hover:shadow-blue-500/30 transition-all duration-300 group-hover:scale-105">
+          <i class="fas fa-chart-line text-white text-sm"></i>
+        </div>
+        <span class="text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700 group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">FinControl</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-gray-600 font-medium">
+        <a href="#funcionalidades" class="hover:text-blue-600 hover:bg-blue-50 px-3 py-1 rounded-lg transition-all duration-200">Funcionalidades</a>
+        <a href="#planos" class="hover:text-blue-600 hover:bg-blue-50 px-3 py-1 rounded-lg transition-all duration-200">Planos</a>
+        <a href="#depoimentos" class="hover:text-blue-600 hover:bg-blue-50 px-3 py-1 rounded-lg transition-all duration-200">Depoimentos</a>
+      </div>
+      <div>
+        <a href="#cta-final" class="bg-gray-900 hover:bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-blue-500/30 flex items-center gap-2 transform hover:-translate-y-0.5"><i class="fas fa-rocket text-xs"></i> Começar grátis</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-12 md:py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+          <i class="fas fa-charging-station text-xs"></i> SaaS completo · Gestão 360°
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+          Controle total do <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">seu negócio</span> em um só lugar
+        </h1>
+        <p class="text-gray-500 text-lg mt-6 leading-relaxed">
+          Organize finanças, projetos e equipe com o FinControl. Tenha visibilidade em tempo real, tome decisões mais inteligentes e aumente a lucratividade da sua empresa.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="#cta-final" class="btn-primary text-white px-8 py-3.5 rounded-2xl font-bold shadow-[0_10px_20px_-10px_rgba(59,130,246,0.6)] hover:shadow-[0_15px_30px_-12px_rgba(59,130,246,0.7)] flex items-center gap-2 text-lg transform hover:-translate-y-1 transition-all duration-300"><i class="fas fa-calendar-check"></i> Teste grátis 14 dias</a>
+          <a href="#funcionalidades" class="border-2 border-gray-200 bg-white px-7 py-3 rounded-2xl font-semibold text-gray-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-1"><i class="fas fa-play-circle text-blue-500"></i> Ver demonstração</a>
+        </div>
+        <p class="text-sm text-gray-400 mt-5">✅ Não exige cartão de crédito · Cancelamento a qualquer momento</p>
+      </div>
+      <div class="relative">
+        <div class="bg-gradient-to-tr from-blue-100 to-purple-100 rounded-2xl p-2 shadow-2xl hero-image-glow">
+          <!-- Gráfico Visual de Fundo -->
+          <div class="bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 rounded-2xl shadow-2xl border border-blue-100 relative overflow-hidden min-h-96 flex items-center justify-center">
+            <!-- Gráfico SVG em background -->
+            <svg class="absolute inset-0 w-full h-full opacity-60" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                  <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="bgArea" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.15" />
+                  <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.03" />
+                </linearGradient>
+              </defs>
+              
+              <!-- Área sob a linha -->
+              <path d="M 0 300 L 50 260 L 100 230 L 150 200 L 200 150 L 250 100 L 300 70 L 350 50 L 400 40 L 450 35 L 500 30 L 550 25 L 600 20 L 600 400 L 0 400 Z" 
+                fill="url(#bgArea)"/>
+              
+              <!-- Linha do gráfico -->
+              <polyline points="0,300 50,260 100,230 150,200 200,150 250,100 300,70 350,50 400,40 450,35 500,30 550,25 600,20" 
+                fill="none" stroke="url(#bgGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <!-- Pontos decorativos -->
+              <circle cx="200" cy="150" r="4" fill="#3b82f6" opacity="0.4"/>
+              <circle cx="350" cy="50" r="4" fill="#8b5cf6" opacity="0.4"/>
+              <circle cx="550" cy="25" r="5" fill="#10b981" opacity="0.6"/>
+            </svg>
+            
+            <!-- Conteúdo em primeiro plano -->
+            <div class="relative z-10 text-center px-6">
+              <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Seu Crescimento Financeiro
+              </h3>
+              <p class="text-gray-600 text-lg md:text-xl mt-4">Comece a acompanhar seu desempenho agora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="bg-gray-50 py-20 mt-8">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-blue-600 font-bold bg-blue-100/50 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase inline-block mb-3 border border-blue-200/50">Dores que destruímos</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mt-2 leading-tight">A gestão desorganizada <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500">mata empresas</span></h2>
+        <p class="text-gray-500 mt-5 text-lg">Pequenas e médias empresas perdem tempo, dinheiro e oportunidades por falta de visibilidade nos processos básicos.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-3xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-red-200 card-hover group"><div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-coins text-2xl text-red-500"></i></div><h3 class="font-bold text-xl text-gray-900">Controle financeiro falho</h3><p class="text-gray-500 mt-3 leading-relaxed">Sem controle de contas a pagar/receber, o caixa da empresa vira uma constante incógnita.</p></div>
+        <div class="bg-white p-8 rounded-3xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-amber-200 card-hover group"><div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-chart-line text-2xl text-amber-500"></i></div><h3 class="font-bold text-xl text-gray-900">Sem visão do lucro</h3><p class="text-gray-500 mt-3 leading-relaxed">Você fatura mas não vê a cor do dinheiro, e não sabe se está lucrando ou perdendo.</p></div>
+        <div class="bg-white p-8 rounded-3xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-purple-200 card-hover group"><div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-users text-2xl text-purple-500"></i></div><h3 class="font-bold text-xl text-gray-900">Equipe desorganizada</h3><p class="text-gray-500 mt-3 leading-relaxed">Tarefas soltas, comunicação falha e nenhuma clareza sobre quem faz o quê na operação.</p></div>
+        <div class="bg-white p-8 rounded-3xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-blue-200 card-hover group"><div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-folder-open text-2xl text-blue-500"></i></div><h3 class="font-bold text-xl text-gray-900">Projetos sem gestão</h3><p class="text-gray-500 mt-3 leading-relaxed">Prazos constantemente atrasados, custos estourados e muitos clientes insatisfeitos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-50 via-white to-purple-50 opacity-70 -z-10"></div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center relative">
+      <span class="text-indigo-600 font-bold bg-indigo-100/50 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase inline-block mb-3 border border-indigo-200/50">SOLUÇÃO COMPLETA</span>
+      <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mt-2 leading-tight">Tudo integrado no mesmo ambiente</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto mt-6 text-lg">Chega de planilhas desatualizadas, múltiplos apps e informações fragmentadas. O FinControl une o que importa em uma dashboard inteligente, 100% online.</p>
+      <div class="grid md:grid-cols-3 gap-12 mt-20 relative">
+        <div class="absolute inset-0 top-1/2 h-0.5 bg-gradient-to-r from-transparent via-blue-200 to-transparent hidden md:block -z-10"></div>
+        <div class="bg-white/60 backdrop-blur-sm p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.05)] card-hover"><div class="w-16 h-16 mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 text-white mb-6 transform -translate-y-12"><i class="fas fa-layer-group text-2xl"></i></div><h3 class="font-extrabold text-xl mb-3 mt-[-20px] text-gray-900">Gestão unificada</h3><p class="text-gray-500 leading-relaxed">Financeiro, Projetos e Equipe centralizados. O que acontece num lado, reflete no outro automaticamente.</p></div>
+        <div class="bg-white/60 backdrop-blur-sm p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.05)] card-hover"><div class="w-16 h-16 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/30 text-white mb-6 transform -translate-y-12"><i class="fas fa-cloud text-2xl"></i></div><h3 class="font-extrabold text-xl mb-3 mt-[-20px] text-gray-900">SaaS totalmente na nuvem</h3><p class="text-gray-500 leading-relaxed">Acesse do celular, tablet ou computador. Sem instalações complexas, backups automáticos e alta segurança.</p></div>
+        <div class="bg-white/60 backdrop-blur-sm p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.05)] card-hover"><div class="w-16 h-16 mx-auto bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg shadow-green-500/30 text-white mb-6 transform -translate-y-12"><i class="fas fa-chart-pie text-2xl"></i></div><h3 class="font-extrabold text-xl mb-3 mt-[-20px] text-gray-900">Decisões baseadas em dados</h3><p class="text-gray-500 leading-relaxed">Painéis, relatórios e KPIs gerados em tempo real que fornecem clareza extrema sobre os lucros.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES COM ABAS INTERATIVAS -->
+  <section id="funcionalidades" class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-12">
+        <span class="text-blue-600 font-semibold tracking-wide">TUDO EM UM</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Funcionalidades poderosas</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto mt-2">Veja como o sistema funciona na prática.</p>
+      </div>
+
+      <!-- Abas de navegação -->
+      <div class="flex justify-center gap-3 mb-8 flex-wrap bg-white p-4 rounded-2xl shadow-md inline-flex w-full">
+        <button onclick="showTab('dashboard')" class="tab-btn active px-6 py-2 rounded-xl font-semibold transition text-gray-700 hover:bg-blue-50" data-tab="dashboard">
+          <i class="fas fa-chart-pie mr-2"></i>Dashboard
+        </button>
+        <button onclick="showTab('financeiro')" class="tab-btn px-6 py-2 rounded-xl font-semibold transition text-gray-700 hover:bg-blue-50" data-tab="financeiro">
+          <i class="fas fa-wallet mr-2"></i>Financeiro
+        </button>
+        <button onclick="showTab('projetos')" class="tab-btn px-6 py-2 rounded-xl font-semibold transition text-gray-700 hover:bg-blue-50" data-tab="projetos">
+          <i class="fas fa-tasks mr-2"></i>Projetos
+        </button>
+        <button onclick="showTab('equipe')" class="tab-btn px-6 py-2 rounded-xl font-semibold transition text-gray-700 hover:bg-blue-50" data-tab="equipe">
+          <i class="fas fa-users mr-2"></i>Equipe
+        </button>
+        <button onclick="showTab('relatorios')" class="tab-btn px-6 py-2 rounded-xl font-semibold transition text-gray-700 hover:bg-blue-50" data-tab="relatorios">
+          <i class="fas fa-chart-line mr-2"></i>Relatórios
+        </button>
+      </div>
+
+      <!-- DASHBOARD TAB -->
+      <div id="dashboard" class="tab-content block bg-white rounded-2xl shadow-2xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Dashboard Principal - Visão Geral</h3>
+        
+        <!-- Cards de resumo -->
+        <div class="grid md:grid-cols-4 gap-4 mb-8">
+          <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-l-4 border-green-500">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-sm text-gray-600 mb-1">Receita Mês</p>
+                <h4 class="text-3xl font-bold text-gray-900">R$ 125.430</h4>
+                <p class="text-xs text-green-600 mt-1"><i class="fas fa-arrow-up"></i> +23% vs mês anterior</p>
+              </div>
+              <i class="fas fa-chart-line text-3xl text-green-500 opacity-30"></i>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border-l-4 border-red-500">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-sm text-gray-600 mb-1">Despesas Mês</p>
+                <h4 class="text-3xl font-bold text-gray-900">R$ 42.100</h4>
+                <p class="text-xs text-red-600 mt-1"><i class="fas fa-arrow-down"></i> -8% vs mês anterior</p>
+              </div>
+              <i class="fas fa-credit-card text-3xl text-red-500 opacity-30"></i>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-l-4 border-blue-500">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-sm text-gray-600 mb-1">Lucro Líquido</p>
+                <h4 class="text-3xl font-bold text-gray-900">R$ 83.330</h4>
+                <p class="text-xs text-blue-600 mt-1">Margem: 66.4%</p>
+              </div>
+              <i class="fas fa-piggy-bank text-3xl text-blue-500 opacity-30"></i>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-l-4 border-purple-500">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-sm text-gray-600 mb-1">Fluxo Caixa</p>
+                <h4 class="text-3xl font-bold text-gray-900">R$ 215.700</h4>
+                <p class="text-xs text-purple-600 mt-1">A receber</p>
+              </div>
+              <i class="fas fa-hand-holding-usd text-3xl text-purple-500 opacity-30"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-6">Receita x Despesa (últimos 6 meses)</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-8">
+              <div style="display: flex; align-items: flex-end; justify-content: space-around; gap: 12px; height: 250px;">
+                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                  <div style="background: #4ade80; height: 160px; width: 35px; border-radius: 4px 4px 0 0;"></div>
+                  <div style="background: #f87171; height: 45px; width: 35px;"></div>
+                  <p style="font-size: 12px; margin-top: 8px; color: #4b5563; font-weight: 600;">Jan</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                  <div style="background: #4ade80; height: 180px; width: 35px; border-radius: 4px 4px 0 0;"></div>
+                  <div style="background: #f87171; height: 50px; width: 35px;"></div>
+                  <p style="font-size: 12px; margin-top: 8px; color: #4b5563; font-weight: 600;">Fev</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                  <div style="background: #4ade80; height: 190px; width: 35px; border-radius: 4px 4px 0 0;"></div>
+                  <div style="background: #f87171; height: 48px; width: 35px;"></div>
+                  <p style="font-size: 12px; margin-top: 8px; color: #4b5563; font-weight: 600;">Mar</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                  <div style="background: #4ade80; height: 170px; width: 35px; border-radius: 4px 4px 0 0;"></div>
+                  <div style="background: #f87171; height: 52px; width: 35px;"></div>
+                  <p style="font-size: 12px; margin-top: 8px; color: #4b5563; font-weight: 600;">Abr</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                  <div style="background: #4ade80; height: 205px; width: 35px; border-radius: 4px 4px 0 0;"></div>
+                  <div style="background: #f87171; height: 45px; width: 35px;"></div>
+                  <p style="font-size: 12px; margin-top: 8px; color: #4b5563; font-weight: 600;">Mai</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                  <div style="background: #4ade80; height: 190px; width: 35px; border-radius: 4px 4px 0 0;"></div>
+                  <div style="background: #f87171; height: 50px; width: 35px;"></div>
+                  <p style="font-size: 12px; margin-top: 8px; color: #4b5563; font-weight: 600;">Jun</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center gap-6 mt-6 text-sm">
+              <span class="flex items-center gap-2"><span class="w-3 h-3 bg-green-400 rounded"></span>Receita</span>
+              <span class="flex items-center gap-2"><span class="w-3 h-3 bg-red-400 rounded"></span>Despesa</span>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-6">Distribuição de Receita por Cliente</h4>
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-semibold text-gray-700">TechCorp</span>
+                  <span class="font-bold text-blue-600">35%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-blue-500 h-3 rounded-full transition-all" style="width: 35%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-semibold text-gray-700">StartupXY</span>
+                  <span class="font-bold text-purple-600">28%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-purple-500 h-3 rounded-full transition-all" style="width: 28%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-semibold text-gray-700">Empresa ABC</span>
+                  <span class="font-bold text-green-600">22%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-green-500 h-3 rounded-full transition-all" style="width: 22%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-semibold text-gray-700">Outros</span>
+                  <span class="font-bold text-amber-600">15%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-amber-500 h-3 rounded-full transition-all" style="width: 15%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Atividades recentes -->
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <h4 class="font-bold text-lg mb-4">Atividades Recentes</h4>
+          <div class="space-y-3">
+            <div class="flex items-center gap-4 p-3 bg-white rounded-lg">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center"><i class="fas fa-check text-green-600"></i></div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold">Fatura #2401 paga</p>
+                <p class="text-xs text-gray-500">TechCorp - R$ 8.500,00</p>
+              </div>
+              <span class="text-xs text-gray-400">Há 2h</span>
+            </div>
+            <div class="flex items-center gap-4 p-3 bg-white rounded-lg">
+              <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center"><i class="fas fa-plus text-blue-600"></i></div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold">Novo projeto criado</p>
+                <p class="text-xs text-gray-500">Projeto "Sistema de E-commerce" - Prazo: 45 dias</p>
+              </div>
+              <span class="text-xs text-gray-400">Há 4h</span>
+            </div>
+            <div class="flex items-center gap-4 p-3 bg-white rounded-lg">
+              <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center"><i class="fas fa-user-plus text-purple-600"></i></div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold">Membro adicionado</p>
+                <p class="text-xs text-gray-500">João Silva adicionado ao projeto "Mobile App"</p>
+              </div>
+              <span class="text-xs text-gray-400">Há 6h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINANCEIRO TAB -->
+      <div id="financeiro" class="tab-content hidden bg-white rounded-2xl shadow-2xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Gestão Financeira Completa</h3>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-blue-50 p-6 rounded-xl">
+            <h4 class="font-semibold text-gray-700 mb-2">Contas a Receber</h4>
+            <p class="text-3xl font-bold text-blue-600">R$ 215.700</p>
+            <p class="text-sm text-gray-600 mt-2">12 faturas pendentes</p>
+          </div>
+          <div class="bg-red-50 p-6 rounded-xl">
+            <h4 class="font-semibold text-gray-700 mb-2">Contas a Pagar</h4>
+            <p class="text-3xl font-bold text-red-600">R$ 42.100</p>
+            <p class="text-sm text-gray-600 mt-2">8 faturas a vencer</p>
+          </div>
+          <div class="bg-green-50 p-6 rounded-xl">
+            <h4 class="font-semibold text-gray-700 mb-2">Saldo em Conta</h4>
+            <p class="text-3xl font-bold text-green-600">R$ 73.400</p>
+            <p class="text-sm text-gray-600 mt-2">Atualizado agora</p>
+          </div>
+        </div>
+
+        <!-- Tabela de transações -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b-2 border-gray-200">
+                <th class="text-left py-3 px-4 text-gray-700 font-semibold">Data</th>
+                <th class="text-left py-3 px-4 text-gray-700 font-semibold">Descrição</th>
+                <th class="text-left py-3 px-4 text-gray-700 font-semibold">Categoria</th>
+                <th class="text-right py-3 px-4 text-gray-700 font-semibold">Valor</th>
+                <th class="text-left py-3 px-4 text-gray-700 font-semibold">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4">15/03/2025</td>
+                <td class="py-3 px-4">Fatura #2401 - TechCorp</td>
+                <td class="py-3 px-4"><span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Receita</span></td>
+                <td class="py-3 px-4 text-right font-semibold text-green-600">+ R$ 8.500,00</td>
+                <td class="py-3 px-4"><span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Paga</span></td>
+              </tr>
+              <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4">14/03/2025</td>
+                <td class="py-3 px-4">Aluguel - Escritório Central</td>
+                <td class="py-3 px-4"><span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Despesa</span></td>
+                <td class="py-3 px-4 text-right font-semibold text-red-600">- R$ 5.000,00</td>
+                <td class="py-3 px-4"><span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Paga</span></td>
+              </tr>
+              <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4">13/03/2025</td>
+                <td class="py-3 px-4">Fatura #2402 - StartupXY</td>
+                <td class="py-3 px-4"><span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Receita</span></td>
+                <td class="py-3 px-4 text-right font-semibold text-green-600">+ R$ 6.200,00</td>
+                <td class="py-3 px-4"><span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Pendente</span></td>
+              </tr>
+              <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4">12/03/2025</td>
+                <td class="py-3 px-4">Software - Assinatura Mensal</td>
+                <td class="py-3 px-4"><span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Despesa</span></td>
+                <td class="py-3 px-4 text-right font-semibold text-red-600">- R$ 1.200,00</td>
+                <td class="py-3 px-4"><span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Pendente</span></td>
+              </tr>
+              <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4">11/03/2025</td>
+                <td class="py-3 px-4">Fatura #2403 - Empresa ABC</td>
+                <td class="py-3 px-4"><span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Receita</span></td>
+                <td class="py-3 px-4 text-right font-semibold text-green-600">+ R$ 12.400,00</td>
+                <td class="py-3 px-4"><span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Paga</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PROJETOS TAB -->
+      <div id="projetos" class="tab-content hidden bg-white rounded-2xl shadow-2xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Gestão de Projetos</h3>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-l-4 border-blue-500">
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-bold text-lg">Sistema de E-commerce</h4>
+              <span class="bg-blue-200 text-blue-800 text-xs px-3 py-1 rounded-full">Em Andamento</span>
+            </div>
+            <p class="text-sm text-gray-700 mb-4">Desenvolvimento de plataforma de e-commerce com integração de pagamento.</p>
+            <div class="mb-3">
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-semibold">Progresso</span>
+                <span>68%</span>
+              </div>
+              <div class="w-full bg-blue-200 rounded-full h-2">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 68%"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div>
+                <p class="text-gray-600">Cliente</p>
+                <p class="font-semibold">TechCorp</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Orçamento</p>
+                <p class="font-semibold">R$ 25.000</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Prazo</p>
+                <p class="font-semibold">25/04/2025</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Equipe</p>
+                <p class="font-semibold">5 pessoas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-l-4 border-purple-500">
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-bold text-lg">Mobile App</h4>
+              <span class="bg-purple-200 text-purple-800 text-xs px-3 py-1 rounded-full">Em Andamento</span>
+            </div>
+            <p class="text-sm text-gray-700 mb-4">Aplicativo mobile para gestão de tarefas e produtividade.</p>
+            <div class="mb-3">
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-semibold">Progresso</span>
+                <span>42%</span>
+              </div>
+              <div class="w-full bg-purple-200 rounded-full h-2">
+                <div class="bg-purple-600 h-2 rounded-full" style="width: 42%"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div>
+                <p class="text-gray-600">Cliente</p>
+                <p class="font-semibold">StartupXY</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Orçamento</p>
+                <p class="font-semibold">R$ 35.000</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Prazo</p>
+                <p class="font-semibold">30/05/2025</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Equipe</p>
+                <p class="font-semibold">8 pessoas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-l-4 border-green-500">
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-bold text-lg">Dashboard Analítico</h4>
+              <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Concluído</span>
+            </div>
+            <p class="text-sm text-gray-700 mb-4">Dashboard com métricas de desempenho em tempo real.</p>
+            <div class="mb-3">
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-semibold">Progresso</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full bg-green-200 rounded-full h-2">
+                <div class="bg-green-600 h-2 rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div>
+                <p class="text-gray-600">Cliente</p>
+                <p class="font-semibold">Empresa ABC</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Orçamento</p>
+                <p class="font-semibold">R$ 15.000</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Conclusão</p>
+                <p class="font-semibold">10/03/2025</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Equipe</p>
+                <p class="font-semibold">3 pessoas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-xl border-l-4 border-amber-500">
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-bold text-lg">Consultoria Estratégica</h4>
+              <span class="bg-amber-200 text-amber-800 text-xs px-3 py-1 rounded-full">Planejamento</span>
+            </div>
+            <p class="text-sm text-gray-700 mb-4">Consultoria para otimizar processos de gestão empresarial.</p>
+            <div class="mb-3">
+              <div class="flex justify-between text-sm mb-1">
+                <span class="font-semibold">Progresso</span>
+                <span>15%</span>
+              </div>
+              <div class="w-full bg-amber-200 rounded-full h-2">
+                <div class="bg-amber-600 h-2 rounded-full" style="width: 15%"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div>
+                <p class="text-gray-600">Cliente</p>
+                <p class="font-semibold">Novo Cliente</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Orçamento</p>
+                <p class="font-semibold">R$ 8.500</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Prazo</p>
+                <p class="font-semibold">31/03/2025</p>
+              </div>
+              <div>
+                <p class="text-gray-600">Equipe</p>
+                <p class="font-semibold">2 pessoas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EQUIPE TAB -->
+      <div id="equipe" class="tab-content hidden bg-white rounded-2xl shadow-2xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Gerenciamento de Equipe</h3>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="text-center p-6 bg-blue-50 rounded-xl">
+            <i class="fas fa-users text-4xl text-blue-600 mb-2"></i>
+            <p class="text-gray-600 text-sm">Total de Membros</p>
+            <p class="text-3xl font-bold text-blue-600">18</p>
+          </div>
+          <div class="text-center p-6 bg-green-50 rounded-xl">
+            <i class="fas fa-check-circle text-4xl text-green-600 mb-2"></i>
+            <p class="text-gray-600 text-sm">Tarefas Concluídas</p>
+            <p class="text-3xl font-bold text-green-600">124</p>
+          </div>
+          <div class="text-center p-6 bg-purple-50 rounded-xl">
+            <i class="fas fa-chart-bar text-4xl text-purple-600 mb-2"></i>
+            <p class="text-gray-600 text-sm">Produtividade</p>
+            <p class="text-3xl font-bold text-purple-600">92%</p>
+          </div>
+        </div>
+
+        <!-- Membros da equipe -->
+        <div class="space-y-3">
+          <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-blue-300 flex items-center justify-center text-white font-bold">LF</div>
+              <div>
+                <p class="font-semibold">Lucas Fernandes</p>
+                <p class="text-sm text-gray-600">Desenvolvedor Full Stack</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Ativo</span></p>
+              <p class="text-xs text-gray-500 mt-1">12 tarefas</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-purple-300 flex items-center justify-center text-white font-bold">JS</div>
+              <div>
+                <p class="font-semibold">João Silva</p>
+                <p class="text-sm text-gray-600">Designer UX/UI</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Ativo</span></p>
+              <p class="text-xs text-gray-500 mt-1">8 tarefas</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-green-300 flex items-center justify-center text-white font-bold">MC</div>
+              <div>
+                <p class="font-semibold">Mariana Costa</p>
+                <p class="text-sm text-gray-600">Gerente de Projetos</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Ativo</span></p>
+              <p class="text-xs text-gray-500 mt-1">15 tarefas</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-red-300 flex items-center justify-center text-white font-bold">RA</div>
+              <div>
+                <p class="font-semibold">Roberto Andrade</p>
+                <p class="text-sm text-gray-600">Desenvolvedor Backend</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Férias</span></p>
+              <p class="text-xs text-gray-500 mt-1">0 tarefas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RELATÓRIOS TAB -->
+      <div id="relatorios" class="tab-content hidden bg-white rounded-2xl shadow-2xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Relatórios e Análises</h3>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-4">Rentabilidade por Projeto</h4>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>E-commerce</span>
+                  <span class="font-bold text-green-600">+92%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-green-500 h-2 rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Mobile App</span>
+                  <span class="font-bold text-green-600">+78%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-green-500 h-2 rounded-full" style="width: 78%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Dashboard Analítico</span>
+                  <span class="font-bold text-green-600">+110%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-4">Cumprimento de Prazos</h4>
+            <div class="flex items-center justify-center mb-6">
+              <div class="relative w-32 h-32">
+                <div class="absolute inset-0 rounded-full border-8 border-gray-200"></div>
+                <div class="absolute inset-0 rounded-full border-8 border-transparent border-t-green-500 border-r-green-500" style="transform: rotate(-45deg)"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="text-center">
+                    <p class="text-lg font-bold">87%</p>
+                    <p class="text-xs text-gray-600">No prazo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-sm text-center text-gray-600">
+              <p>13 de 15 projetos entregues no prazo</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPIs -->
+        <div class="mt-8 grid md:grid-cols-4 gap-4">
+          <div class="bg-gradient-to-br from-blue-100 to-blue-50 p-4 rounded-lg text-center">
+            <p class="text-gray-600 text-sm mb-1">Ticket Médio</p>
+            <p class="text-2xl font-bold text-blue-600">R$ 10.477</p>
+            <p class="text-xs text-gray-500 mt-1">↑ 12% vs mês anterior</p>
+          </div>
+          <div class="bg-gradient-to-br from-green-100 to-green-50 p-4 rounded-lg text-center">
+            <p class="text-gray-600 text-sm mb-1">Taxa de Crescimento</p>
+            <p class="text-2xl font-bold text-green-600">18.4%</p>
+            <p class="text-xs text-gray-500 mt-1">Receita acumulada</p>
+          </div>
+          <div class="bg-gradient-to-br from-purple-100 to-purple-50 p-4 rounded-lg text-center">
+            <p class="text-gray-600 text-sm mb-1">ROI Médio</p>
+            <p class="text-2xl font-bold text-purple-600">156%</p>
+            <p class="text-xs text-gray-500 mt-1">Sobre investimento</p>
+          </div>
+          <div class="bg-gradient-to-br from-amber-100 to-amber-50 p-4 rounded-lg text-center">
+            <p class="text-gray-600 text-sm mb-1">Tempo Médio</p>
+            <p class="text-2xl font-bold text-amber-600">32 dias</p>
+            <p class="text-xs text-gray-500 mt-1">Por projeto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS + DIFERENCIAIS (blend) -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Gráficos e Relatórios -->
+        <div class="bg-gradient-to-br from-slate-100 to-slate-50 rounded-2xl p-6 shadow-xl">
+          <div class="mb-6">
+            <h4 class="font-bold text-gray-800 mb-4">Relatórios em Tempo Real</h4>
+            
+            <!-- Pizza Chart -->
+            <div class="bg-white rounded-lg p-4 mb-4">
+              <p class="text-sm text-gray-600 mb-3">Receita por Cliente</p>
+              <div class="flex items-center justify-center gap-6">
+                <div class="relative w-32 h-32">
+                  <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="62.8 100" stroke-linecap="round"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#8b5cf6" stroke-width="8" stroke-dasharray="47.1 100" stroke-dashoffset="-62.8" stroke-linecap="round"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#ec4899" stroke-width="8" stroke-dasharray="31.4 100" stroke-dashoffset="-109.9" stroke-linecap="round"/>
+                  </svg>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center">
+                      <p class="text-xl font-bold text-gray-800">3</p>
+                      <p class="text-xs text-gray-500">clientes</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-3 text-sm">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-blue-500"></span>
+                    <span class="text-gray-700">TechCorp <span class="font-semibold">35%</span></span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-purple-500"></span>
+                    <span class="text-gray-700">StartupXY <span class="font-semibold">28%</span></span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-pink-500"></span>
+                    <span class="text-gray-700">Empresa ABC <span class="font-semibold">22%</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Performance Bars -->
+            <div class="bg-white rounded-lg p-4">
+              <p class="text-sm text-gray-600 mb-3">Performance por Mês</p>
+              <div class="space-y-3">
+                <div>
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-gray-700">Janeiro</span>
+                    <span class="text-green-600 font-bold">85%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-gray-700">Fevereiro</span>
+                    <span class="text-green-600 font-bold">92%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-500 h-2 rounded-full" style="width: 92%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-gray-700">Março</span>
+                    <span class="text-green-600 font-bold">78%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-500 h-2 rounded-full" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><span class="text-blue-600 font-bold bg-blue-100/50 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase inline-block mb-3 border border-blue-200/50">Por que escolher</span><h2 class="text-3xl md:text-5xl font-extrabold mt-2 text-gray-900 leading-tight">Benefícios que <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">transformam</span> sua gestão</h2><ul class="mt-8 space-y-6"><li class="flex gap-4 group"><div class="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-2xl group-hover:bg-blue-100 group-hover:scale-110 transition-all duration-300"><i class="fas fa-clock text-blue-500 text-xl"></i></div><div><span class="font-bold text-gray-900 text-xl">Economia de tempo</span><p class="text-gray-500 mt-1 leading-relaxed">Automatize conciliações, gere relatórios recorrentes e evite retrabalho humano.</p></div></li><li class="flex gap-4 group"><div class="w-12 h-12 bg-indigo-50 flex items-center justify-center rounded-2xl group-hover:bg-indigo-100 group-hover:scale-110 transition-all duration-300"><i class="fas fa-chart-simple text-indigo-500 text-xl"></i></div><div><span class="font-bold text-gray-900 text-xl">Organização total</span><p class="text-gray-500 mt-1 leading-relaxed">Todos os dados centrais, notas fiscais, metas e tarefas da equipe num único repositório online seguro.</p></div></li><li class="flex gap-4 group"><div class="w-12 h-12 bg-purple-50 flex items-center justify-center rounded-2xl group-hover:bg-purple-100 group-hover:scale-110 transition-all duration-300"><i class="fas fa-brain text-purple-500 text-xl"></i></div><div><span class="font-bold text-gray-900 text-xl">Decisões mais rápidas</span><p class="text-gray-500 mt-1 leading-relaxed">Chega de trabalhar no 'achismo'. Deixe o sistema cruzar as informações e entregar os insights.</p></div></li><li class="flex gap-4 group"><div class="w-12 h-12 bg-emerald-50 flex items-center justify-center rounded-2xl group-hover:bg-emerald-100 group-hover:scale-110 transition-all duration-300"><i class="fas fa-eye text-emerald-500 text-xl"></i></div><div><span class="font-bold text-gray-900 text-xl">Visão panorâmica 360°</span><p class="text-gray-500 mt-1 leading-relaxed">Acompanhe se a equipe ociosa reflete no caixa ou se o lucro está sendo comido por juros.</p></div></li></ul></div>
+      </div>
+      <div class="mt-24 relative overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 p-10 rounded-[2.5rem] shadow-2xl">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNCI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoMnptMC00djItaDJ2LTJoMnptLTQtNHYyaDJ2LTJoLTJ6bS00IDR2Mmgydi0yaC0yem0tNCA0djJoMnYtMmgtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+        <div class="grid md:grid-cols-4 gap-8 text-center relative z-10"><div><div class="w-16 h-16 mx-auto bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md mb-4"><i class="fas fa-cloud text-3xl text-blue-300"></i></div><h3 class="font-bold text-lg text-white">100% online SaaS</h3><p class="text-sm text-blue-200/70 mt-1">Sem servidores, sem dores</p></div><div><div class="w-16 h-16 mx-auto bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md mb-4"><i class="fas fa-wand-magic-sparkles text-3xl text-purple-300"></i></div><h3 class="font-bold text-lg text-white">Interface fluida</h3><p class="text-sm text-blue-200/70 mt-1">Curva zero de aprendizado</p></div><div><div class="w-16 h-16 mx-auto bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md mb-4"><i class="fas fa-puzzle-piece text-3xl text-indigo-300"></i></div><h3 class="font-bold text-lg text-white">Ecossistema único</h3><p class="text-sm text-blue-200/70 mt-1">Integração nativa perfeita</p></div><div><div class="w-16 h-16 mx-auto bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md mb-4"><i class="fas fa-chart-line text-3xl text-emerald-300"></i></div><h3 class="font-bold text-lg text-white">Muito escalável</h3><p class="text-sm text-blue-200/70 mt-1">Para times de 2 ou 200</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL (depoimentos simulados) -->
+  <section id="depoimentos" class="bg-gray-50 py-24 relative">
+    <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-16"><span class="text-blue-600 font-bold bg-blue-100/50 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase inline-block mb-3 border border-blue-200/50">PROVA SOCIAL REAL</span><h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mt-2 leading-tight">Quem já usa não troca</h2><p class="text-gray-500 mt-4 text-lg">Veja como empreendedores impulsionaram <span class="font-semibold text-blue-600">mais de R$10M</span> usando nossa gestão unificada.</p></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="testimonial-card p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 bg-white relative card-hover"><div class="absolute top-6 right-6 text-6xl text-gray-100 leading-none font-serif">"</div><div class="flex items-center gap-4 relative z-10"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-2 border-white shadow-sm"><i class="fas fa-user-tie text-blue-600 text-xl"></i></div><div><p class="font-extrabold text-gray-900">Camila Mendes</p><p class="text-sm text-gray-500 font-medium">CEO, Conecta Soluções</p></div></div><p class="mt-6 text-gray-600 leading-relaxed relative z-10">O FinanSys revolucionou nosso fluxo de caixa da água pro vinho. Em noventa dias nosso lucro líquido saltou 27% e a equipe finalmente se encontra na mesma página em todos os projetos de clientes.</p><div class="mt-6 flex items-center justify-between text-sm text-gray-500 font-semibold border-t border-gray-50 pt-4"><div class="text-amber-400 flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span>Há 2 meses</span></div></div>
+        <div class="testimonial-card p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 bg-white relative card-hover"><div class="absolute top-6 right-6 text-6xl text-gray-100 leading-none font-serif">"</div><div class="flex items-center gap-4 relative z-10"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center border-2 border-white shadow-sm"><i class="fas fa-chart-line text-purple-600 text-xl"></i></div><div><p class="font-extrabold text-gray-900">Ricardo Alves</p><p class="text-sm text-gray-500 font-medium">CFO, Growth X Partners</p></div></div><p class="mt-6 text-gray-600 leading-relaxed relative z-10">Montar os reports de fechamento de mês levava horas e muitos cruzamentos furados. Os relatórios gerenciais nativos são absurdos, eu tenho a saúde comercial do ano na palma da minha mão.</p><div class="mt-6 flex items-center justify-between text-sm text-gray-500 font-semibold border-t border-gray-50 pt-4"><div class="text-amber-400 flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span>Há 4 meses</span></div></div>
+        <div class="testimonial-card p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-gray-100 bg-white relative card-hover"><div class="absolute top-6 right-6 text-6xl text-gray-100 leading-none font-serif">"</div><div class="flex items-center gap-4 relative z-10"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center border-2 border-white shadow-sm"><i class="fas fa-laptop-code text-emerald-600 text-xl"></i></div><div><p class="font-extrabold text-gray-900">Juliana Castro</p><p class="text-sm text-gray-500 font-medium">Head, Creative Pixel</p></div></div><p class="mt-6 text-gray-600 leading-relaxed relative z-10">Ligar as despesas mensais atreladas e alocar nos projetos exatos onde elas acontecem virou totalmente o jogo de faturamento do nosso estúdio, acabou com a sangria financeira em jobs mal precificados.</p><div class="mt-6 flex items-center justify-between text-sm text-gray-500 font-semibold border-t border-gray-50 pt-4"><div class="text-amber-400 flex gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span>Há 5 meses</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos" class="py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-12"><span class="text-blue-600 font-semibold">planos flexíveis</span><h2 class="text-3xl md:text-4xl font-bold">Escolha o plano ideal para seu negócio</h2><p class="text-gray-500">Comece grátis e migre quando precisar de mais recursos.</p></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 pricing-card"><div class="text-center"><i class="fas fa-seedling text-3xl text-green-500"></i><h3 class="text-2xl font-bold mt-2">Gratuito</h3><p class="text-gray-500">Perfeito para começar</p><div class="mt-4"><span class="text-4xl font-extrabold">R$ 0</span><span class="text-gray-500">/mês</span></div></div><ul class="mt-6 space-y-3"><li><i class="fas fa-check text-green-500 mr-2"></i>Até 3 usuários</li><li><i class="fas fa-check text-green-500 mr-2"></i>Contas a pagar/receber básico</li><li><i class="fas fa-check text-green-500 mr-2"></i>1 projeto ativo</li><li><i class="fas fa-check text-green-500 mr-2"></i>Relatórios mensais</li><li><i class="fas fa-times text-gray-300 mr-2"></i>Metas avançadas</li></ul><div class="mt-8"><a href="#cta-final" class="block text-center border border-blue-600 text-blue-600 font-semibold py-2 rounded-xl hover:bg-blue-50 transition">Começar grátis</a></div></div>
+        <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl border-2 border-blue-200 p-6 relative pricing-card"><div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">MAIS POPULAR</div><div class="text-center"><i class="fas fa-rocket text-3xl text-blue-600"></i><h3 class="text-2xl font-bold mt-2">Plano Pro</h3><p class="text-gray-500">Para equipes em crescimento</p><div class="mt-4"><span class="text-4xl font-extrabold">R$ 59</span><span class="text-gray-500">/mês</span></div></div><ul class="mt-6 space-y-3"><li><i class="fas fa-check text-green-500 mr-2"></i>Até 15 usuários</li><li><i class="fas fa-check text-green-500 mr-2"></i>Fluxo de caixa + conciliação</li><li><i class="fas fa-check text-green-500 mr-2"></i>Projetos ilimitados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Tarefas e equipe completa</li><li><i class="fas fa-check text-green-500 mr-2"></i>Gráficos e indicadores avançados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Mural de metas</li></ul><div class="mt-8"><a href="#cta-final" class="block text-center bg-blue-600 text-white font-bold py-2 rounded-xl shadow-md hover:bg-blue-700 transition">Teste grátis 14 dias</a></div></div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 pricing-card"><div class="text-center"><i class="fas fa-crown text-3xl text-purple-500"></i><h3 class="text-2xl font-bold mt-2">Premium</h3><p class="text-gray-500">Escalabilidade total</p><div class="mt-4"><span class="text-4xl font-extrabold">R$ 129</span><span class="text-gray-500">/mês</span></div></div><ul class="mt-6 space-y-3"><li><i class="fas fa-check text-green-500 mr-2"></i>Usuários ilimitados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Todos recursos Pro</li><li><i class="fas fa-check text-green-500 mr-2"></i>Suporte prioritário 24/7</li><li><i class="fas fa-check text-green-500 mr-2"></i>API e integrações exclusivas</li><li><i class="fas fa-check text-green-500 mr-2"></i>Relatórios personalizados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Treinamento dedicado</li></ul><div class="mt-8"><a href="#cta-final" class="block text-center border border-purple-600 text-purple-600 font-semibold py-2 rounded-xl hover:bg-purple-50 transition">Falar conosco</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final" class="bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgY3g9IjMiIGN5PSIzIiByPSIxIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSIvPjwvZz48L3N2Zz4=')] bg-gray-900 border-b border-gray-800 text-white pt-24 pb-32 mb-[-8rem] mx-4 md:mx-10 rounded-[3rem] shadow-2xl relative overflow-hidden mt-20">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-[120px] opacity-20 mix-blend-screen mix-blend-color-dodge z-0"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-500 rounded-full blur-[120px] opacity-20 mix-blend-screen mix-blend-color-dodge z-0"></div>
+    <div class="max-w-4xl mx-auto text-center px-5 relative z-10">
+      <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl flex items-center justify-center p-0.5 shadow-2xl shadow-blue-500/30 mb-8 transform -rotate-6"><div class="w-full h-full bg-gray-900/40 rounded-[1.35rem] flex items-center justify-center backdrop-blur-md"><i class="fas fa-rocket text-3xl text-white"></i></div></div>
+      <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Chegou a hora de <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">crescer.</span></h2>
+      <p class="text-gray-300 text-xl mt-6 font-light max-w-2xl mx-auto leading-relaxed">Junte-se a centenas de empresas que já dominam 100% da sua rotina comercial, gestão e fluxos com o FinControl. Pare de apagar incêndios.</p>
+      <div class="mt-12 flex flex-wrap justify-center gap-5">
+        <a href="#" class="bg-white text-gray-900 px-10 py-4 rounded-2xl font-extrabold text-lg shadow-[0_15px_30px_-5px_rgba(255,255,255,0.2)] hover:scale-105 hover:bg-gray-50 hover:shadow-[0_20px_40px_-5px_rgba(255,255,255,0.3)] transition-all duration-300 flex items-center gap-3"><i class="fas fa-chart-line text-blue-600"></i> Começar FinControl</a>
+        <a href="#" class="bg-gray-800/60 backdrop-blur-lg border border-gray-700 text-white px-10 py-4 rounded-2xl font-bold hover:bg-gray-800 hover:border-gray-500 transition-all duration-300 flex items-center gap-3"><i class="fab fa-google text-lg"></i> Validar com Google</a>
+      </div>
+      <p class="text-sm font-medium text-gray-500 mt-8 flex flex-col md:flex-row justify-center gap-4 items-center">
+        <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-400/80"></i> 14 dias grátis de fato</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-400/80"></i> Não pedimos cartão agora</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-400/80"></i> Setup e onboarding guiado</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-white border-t border-gray-100 pt-48 pb-12 mt-12 bg-gradient-to-b from-transparent to-gray-50/50">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="col-span-2"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center"><i class="fas fa-chart-line text-white text-sm"></i></div><span class="text-xl font-bold text-gray-800">FinanSys</span></div><p class="text-gray-500 text-sm mt-3">SaaS inteligente de gestão financeira + projetos + equipe. Transforme seu negócio.</p><div class="flex gap-4 mt-4 text-gray-500 text-xl"><i class="fab fa-instagram hover:text-blue-500 cursor-pointer"></i><i class="fab fa-linkedin hover:text-blue-500 cursor-pointer"></i><i class="fab fa-twitter hover:text-blue-500 cursor-pointer"></i></div></div>
+      <div><h4 class="font-bold text-gray-800">Produto</h4><ul class="mt-3 space-y-2 text-gray-500 text-sm"><li class="footer-link hover:text-blue-600 cursor-pointer">Funcionalidades</li><li class="footer-link hover:text-blue-600 cursor-pointer">Planos</li><li class="footer-link hover:text-blue-600 cursor-pointer">Segurança</li></ul></div>
+      <div><h4 class="font-bold text-gray-800">Empresa</h4><ul class="mt-3 space-y-2 text-gray-500 text-sm"><li class="footer-link hover:text-blue-600 cursor-pointer">Sobre nós</li><li class="footer-link hover:text-blue-600 cursor-pointer">Carreiras</li><li class="footer-link hover:text-blue-600 cursor-pointer">Blog</li></ul></div>
+      <div><h4 class="font-bold text-gray-800">Suporte</h4><ul class="mt-3 space-y-2 text-gray-500 text-sm"><li class="footer-link hover:text-blue-600 cursor-pointer">Central de ajuda</li><li class="footer-link hover:text-blue-600 cursor-pointer">Contato</li><li class="footer-link hover:text-blue-600 cursor-pointer">Status</li></ul></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-8 mt-8 border-t border-gray-100 text-center text-gray-400 text-xs">© 2025 FinControl - Gestão Empresarial. Todos os direitos reservados. CNPJ 12.345.678/0001-99</div>
+  </footer>
+
+  <!-- Simples JS para interação suave nos links -->
+  <script>
+    // Sistema de abas
+    function showTab(tabName) {
+      // Esconde todos os conteúdos
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => {
+        content.classList.add('hidden');
+      });
+      
+      // Remove classe ativa de todos os botões
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'bg-blue-600', 'text-white');
+        btn.classList.add('text-gray-700');
+      });
+      
+      // Mostra o conteúdo selecionado
+      const selectedContent = document.getElementById(tabName);
+      if(selectedContent) {
+        selectedContent.classList.remove('hidden');
+      }
+      
+      // Ativa o botão clicado
+      event.target.closest('.tab-btn').classList.add('active', 'bg-blue-600', 'text-white');
+      event.target.closest('.tab-btn').classList.remove('text-gray-700');
+    }
+
+    // Smooth scroll nos links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if(href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Animação de entrada dos elementos
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.6s ease-out';
+        }
+      });
+    });
+
+    document.querySelectorAll('.card-hover, .tab-content').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

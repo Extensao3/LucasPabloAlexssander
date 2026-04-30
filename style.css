@@ -1,0 +1,92 @@
+/* Google Fonts: Inter (moderna) */
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Gradientes */
+.gradient-bg {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+
+/* Cards com efeito hover */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão primário */
+.btn-primary {
+  background: linear-gradient(95deg, #3B82F6, #8B5CF6);
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px -5px rgba(59,130,246,0.4);
+}
+
+/* Glow effect nas imagens do hero */
+.hero-image-glow {
+  box-shadow: 0 25px 40px -12px rgba(0,0,0,0.25);
+  border-radius: 1.5rem;
+}
+
+/* Cards de depoimentos */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 40px -15px rgba(0,0,0,0.1);
+  border-color: #E2E8F0;
+}
+
+/* Cards de preço */
+.pricing-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Links no rodapé */
+.footer-link {
+  transition: color 0.2s;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tabs */
+.tab-btn.active {
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  color: white;
+}
+
+.tab-content {
+  animation: fadeInUp 0.4s ease-out;
+}

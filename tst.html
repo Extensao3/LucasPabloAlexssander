@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>FinControl | Gestão Financeira + Projetos + Equipe em um só lugar</title>
+  <!-- Tailwind CSS + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter (moderna) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #ffffff;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+      background: linear-gradient(95deg, #3B82F6, #8B5CF6);
+      transition: all 0.2s;
+    }
+    .btn-primary:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px -5px rgba(59,130,246,0.4);
+    }
+    .hero-image-glow {
+      box-shadow: 0 25px 40px -12px rgba(0,0,0,0.25);
+      border-radius: 1.5rem;
+    }
+    .testimonial-card {
+      background: #F8FAFF;
+      border-radius: 1.5rem;
+      transition: all 0.2s;
+    }
+    .pricing-card {
+      transition: all 0.25s ease;
+    }
+    .pricing-card:hover {
+      transform: translateY(-8px);
+    }
+    .footer-link {
+      transition: color 0.2s;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200/60 shadow-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center shadow-md">
+          <i class="fas fa-chart-line text-white text-sm"></i>
+        </div>
+        <span class="text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700">FinControl</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-gray-600 font-medium">
+        <a href="#funcionalidades" class="hover:text-blue-600 transition">Funcionalidades</a>
+        <a href="#planos" class="hover:text-blue-600 transition">Planos</a>
+        <a href="#depoimentos" class="hover:text-blue-600 transition">Depoimentos</a>
+      </div>
+      <div>
+        <a href="#cta-final" class="bg-gray-900 hover:bg-gray-800 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-md flex items-center gap-2"><i class="fas fa-rocket text-xs"></i> Começar grátis</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-12 md:py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+          <i class="fas fa-charging-station text-xs"></i> SaaS completo · Gestão 360°
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+          Controle total do <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">seu negócio</span> em um só lugar
+        </h1>
+        <p class="text-gray-500 text-lg mt-6 leading-relaxed">
+          Organize finanças, projetos e equipe com o FinControl. Tenha visibilidade em tempo real, tome decisões mais inteligentes e aumente a lucratividade da sua empresa.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="#cta-final" class="btn-primary text-white px-8 py-3 rounded-xl font-bold shadow-lg flex items-center gap-2 text-lg"><i class="fas fa-calendar-check"></i> Teste grátis 14 dias</a>
+          <a href="#funcionalidades" class="border border-gray-300 bg-white px-7 py-3 rounded-xl font-semibold text-gray-700 hover:bg-gray-50 transition flex items-center gap-2"><i class="fas fa-play-circle"></i> Ver demonstração</a>
+        </div>
+        <p class="text-sm text-gray-400 mt-5">✅ Não exige cartão de crédito · Cancelamento a qualquer momento</p>
+      </div>
+      <div class="relative">
+        <div class="bg-gradient-to-tr from-blue-100 to-purple-100 rounded-2xl p-2 shadow-2xl hero-image-glow">
+          <img src="https://placehold.co/700x500/eef2ff/3b82f6?text=Dashboard+FinControl+Mockup" alt="Interface FinControl" class="rounded-xl w-full shadow-md border border-white/20">
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl p-3 hidden sm:flex items-center gap-3 border border-gray-100">
+          <i class="fas fa-chart-simple text-2xl text-green-500"></i>
+          <div><p class="text-xs text-gray-500">Fluxo de caixa atual</p><p class="font-bold">R$ 48.200,00</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="bg-gray-50 py-20 mt-8">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Dores que destruímos</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">A gestão desorganizada <span class="text-blue-600">mata empresas</span></h2>
+        <p class="text-gray-500 mt-4">Pequenas e médias empresas perdem tempo, dinheiro e oportunidades por falta de visibilidade.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-red-400 card-hover"><i class="fas fa-coins text-3xl text-red-400 mb-3"></i><h3 class="font-bold text-xl">Controle financeiro falho</h3><p class="text-gray-500 mt-2">Sem controle de contas a pagar/receber, o caixa vira uma incógnita.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-amber-400 card-hover"><i class="fas fa-chart-line text-3xl text-amber-400 mb-3"></i><h3 class="font-bold text-xl">Sem visão do lucro real</h3><p class="text-gray-500 mt-2">Você não sabe se realmente está lucrando ou perdendo dinheiro.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-purple-400 card-hover"><i class="fas fa-users text-3xl text-purple-400 mb-3"></i><h3 class="font-bold text-xl">Equipe desorganizada</h3><p class="text-gray-500 mt-2">Projetos e tarefas soltas, sem atribuição clara de responsabilidades.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-blue-400 card-hover"><i class="fas fa-folder-open text-3xl text-blue-400 mb-3"></i><h3 class="font-bold text-xl">Projetos sem gestão</h3><p class="text-gray-500 mt-2">Prazos perdidos, custos estourados e clientes insatisfeitos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+      <span class="text-indigo-600 font-semibold">SOLUÇÃO COMPLETA</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Tudo integrado no mesmo ambiente</h2>
+      <p class="text-gray-500 max-w-3xl mx-auto mt-4">Chega de planilhas, múltiplos apps e informações fragmentadas. O FinControl une finanças, projetos e times em um só lugar, 100% online.</p>
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+        <div><i class="fas fa-chart-pie text-4xl text-blue-500 bg-blue-50 p-4 rounded-2xl inline-block"></i><h3 class="font-bold text-xl mt-4">Gestão unificada</h3><p class="text-gray-500">Financeiro + Projetos + Equipe numa dashboard inteligente.</p></div>
+        <div><i class="fas fa-cloud-upload-alt text-4xl text-purple-500 bg-purple-50 p-4 rounded-2xl inline-block"></i><h3 class="font-bold text-xl mt-4">SaaS na nuvem</h3><p class="text-gray-500">Acesse de qualquer lugar, sem instalação, sempre atualizado.</p></div>
+        <div><i class="fas fa-chart-simple text-4xl text-green-500 bg-green-50 p-4 rounded-2xl inline-block"></i><h3 class="font-bold text-xl mt-4">Decisões baseadas em dados</h3><p class="text-gray-500">Relatórios e KPIs que mostram o real desempenho do negócio.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES (cards) -->
+  <section id="funcionalidades" class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-12">
+        <span class="text-blue-600 font-semibold tracking-wide">TUDO EM UM</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Funcionalidades poderosas</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto mt-2">Gerencie cada aspecto da sua empresa com simplicidade e eficiência.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 shadow-md card-hover"><i class="fas fa-wallet text-3xl text-blue-500"></i><h3 class="font-bold text-xl mt-3">Gestão Financeira</h3><ul class="mt-3 space-y-2 text-gray-600"><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Contas a pagar/receber</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Fluxo de caixa previsto</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Controle entradas e saídas</li></ul></div>
+        <div class="bg-white rounded-2xl p-6 shadow-md card-hover"><i class="fas fa-tasks text-3xl text-purple-500"></i><h3 class="font-bold text-xl mt-3">Gestão de Projetos</h3><ul class="mt-3 space-y-2 text-gray-600"><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Criar, editar, excluir projetos</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Organização por cliente</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Prazos e orçamentos</li></ul></div>
+        <div class="bg-white rounded-2xl p-6 shadow-md card-hover"><i class="fas fa-users text-3xl text-indigo-500"></i><h3 class="font-bold text-xl mt-3">Equipe e Tarefas</h3><ul class="mt-3 space-y-2 text-gray-600"><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Adicionar pessoas aos projetos</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Definir serviços/tarefas</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Acompanhamento de produtividade</li></ul></div>
+        <div class="bg-white rounded-2xl p-6 shadow-md card-hover"><i class="fas fa-chart-line text-3xl text-green-500"></i><h3 class="font-bold text-xl mt-3">Análises e Relatórios</h3><ul class="mt-3 space-y-2 text-gray-600"><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Gráficos financeiros interativos</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Ganho total por período</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Indicadores de desempenho</li></ul></div>
+        <div class="bg-white rounded-2xl p-6 shadow-md card-hover"><i class="fas fa-flag-checkered text-3xl text-amber-500"></i><h3 class="font-bold text-xl mt-3">Metas</h3><ul class="mt-3 space-y-2 text-gray-600"><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Mural de metas personalizado</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Acompanhamento de objetivos</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Alertas de progresso</li></ul></div>
+        <div class="bg-white rounded-2xl p-6 shadow-md card-hover"><i class="fas fa-sync-alt text-3xl text-cyan-500"></i><h3 class="font-bold text-xl mt-3">Integração Total</h3><ul class="mt-3 space-y-2 text-gray-600"><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Financeiro + Projetos + Equipe</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>API para ERPs parceiros</li><li><i class="fas fa-check-circle text-green-500 text-sm mr-2"></i>Exportação de relatórios</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS + DIFERENCIAIS (blend) -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div><img src="https://placehold.co/600x400/f1f5f9/3b82f6?text=Relatórios+KPIs" alt="dashboard analytics" class="rounded-2xl shadow-xl border"></div>
+        <div><span class="text-blue-600 font-bold uppercase text-sm">por que escolher</span><h2 class="text-3xl font-bold mt-2">Benefícios que transformam sua gestão</h2><ul class="mt-6 space-y-4"><li class="flex gap-3"><i class="fas fa-clock text-blue-500 text-xl"></i><div><span class="font-bold">Economia de tempo</span><p class="text-gray-500">Automatize conciliações e evite retrabalho.</p></div></li><li class="flex gap-3"><i class="fas fa-chart-simple text-blue-500 text-xl"></i><div><span class="font-bold">Organização total</span><p class="text-gray-500">Todos os dados centralizados, acessíveis em tempo real.</p></div></li><li class="flex gap-3"><i class="fas fa-brain text-blue-500 text-xl"></i><div><span class="font-bold">Melhor tomada de decisão</span><p class="text-gray-500">Insights baseados em dados concretos.</p></div></li><li class="flex gap-3"><i class="fas fa-eye text-blue-500 text-xl"></i><div><span class="font-bold">Visão clara do negócio</span><p class="text-gray-500">Veja lucro líquido, margens e performance da equipe.</p></div></li></ul></div>
+      </div>
+      <div class="mt-20 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-3xl">
+        <div class="grid md:grid-cols-4 gap-8 text-center"><div><i class="fas fa-cloud text-3xl text-blue-600"></i><h3 class="font-bold text-lg mt-2">100% online SaaS</h3><p class="text-sm text-gray-500">Sem servidores, sem preocupações</p></div><div><i class="fas fa-paintbrush-fine text-3xl text-purple-600"></i><h3 class="font-bold text-lg mt-2">Interface intuitiva</h3><p class="text-sm text-gray-500">Curva zero de aprendizado</p></div><div><i class="fas fa-puzzle-piece text-3xl text-indigo-600"></i><h3 class="font-bold text-lg mt-2">Tudo integrado</h3><p class="text-sm text-gray-500">Financeiro+projetos+equipe</p></div><div><i class="fas fa-chart-line text-3xl text-green-600"></i><h3 class="font-bold text-lg mt-2">Escalável</h3><p class="text-sm text-gray-500">Cresça sem migrar de sistema</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL (depoimentos simulados) -->
+  <section id="depoimentos" class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-12"><span class="text-blue-600 font-semibold">PROVA SOCIAL</span><h2 class="text-3xl font-bold">Quem usa, recomenda</h2><p class="text-gray-500">Veja como empreendedores já transformaram seus negócios com o FinanSys.</p></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="testimonial-card p-6 shadow-sm border border-gray-100"><div class="flex items-center gap-3"><div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center"><i class="fas fa-user-tie text-blue-600 text-xl"></i></div><div><p class="font-bold">Camila Mendes</p><p class="text-sm text-gray-500">CEO, Conecta Soluções</p></div></div><p class="mt-4 text-gray-600 italic">"O FinanSys revolucionou nosso fluxo de caixa. Em três meses aumentamos nossa lucratividade em 27% e a equipe finalmente tem clareza sobre projetos."</p><div class="mt-3 text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+        <div class="testimonial-card p-6 shadow-sm border border-gray-100"><div class="flex items-center gap-3"><div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"><i class="fas fa-chart-line text-purple-600 text-xl"></i></div><div><p class="font-bold">Ricardo Alves</p><p class="text-sm text-gray-500">CFO, Grupo Alves & Associados</p></div></div><p class="mt-4 text-gray-600 italic">"Relatórios automatizados e gestão de metas salvam horas da minha semana. Finalmente tenho indicadores confiáveis para apresentar aos sócios."</p><div class="mt-3 text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+        <div class="testimonial-card p-6 shadow-sm border border-gray-100"><div class="flex items-center gap-3"><div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center"><i class="fas fa-laptop-code text-green-600 text-xl"></i></div><div><p class="font-bold">Juliana Castro</p><p class="text-sm text-gray-500">Fundadora, CreativeHub</p></div></div><p class="mt-4 text-gray-600 italic">"Integração entre projetos, tarefas e faturamento era o que faltava. Agora consigo alocar minha equipe com muito mais inteligência."</p><div class="mt-3 text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos" class="py-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-12"><span class="text-blue-600 font-semibold">planos flexíveis</span><h2 class="text-3xl md:text-4xl font-bold">Escolha o plano ideal para seu negócio</h2><p class="text-gray-500">Comece grátis e migre quando precisar de mais recursos.</p></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 pricing-card"><div class="text-center"><i class="fas fa-seedling text-3xl text-green-500"></i><h3 class="text-2xl font-bold mt-2">Gratuito</h3><p class="text-gray-500">Perfeito para começar</p><div class="mt-4"><span class="text-4xl font-extrabold">R$ 0</span><span class="text-gray-500">/mês</span></div></div><ul class="mt-6 space-y-3"><li><i class="fas fa-check text-green-500 mr-2"></i>Até 3 usuários</li><li><i class="fas fa-check text-green-500 mr-2"></i>Contas a pagar/receber básico</li><li><i class="fas fa-check text-green-500 mr-2"></i>1 projeto ativo</li><li><i class="fas fa-check text-green-500 mr-2"></i>Relatórios mensais</li><li><i class="fas fa-times text-gray-300 mr-2"></i>Metas avançadas</li></ul><div class="mt-8"><a href="#cta-final" class="block text-center border border-blue-600 text-blue-600 font-semibold py-2 rounded-xl hover:bg-blue-50 transition">Começar grátis</a></div></div>
+        <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl border-2 border-blue-200 p-6 relative pricing-card"><div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">MAIS POPULAR</div><div class="text-center"><i class="fas fa-rocket text-3xl text-blue-600"></i><h3 class="text-2xl font-bold mt-2">Plano Pro</h3><p class="text-gray-500">Para equipes em crescimento</p><div class="mt-4"><span class="text-4xl font-extrabold">R$ 59</span><span class="text-gray-500">/mês</span></div></div><ul class="mt-6 space-y-3"><li><i class="fas fa-check text-green-500 mr-2"></i>Até 15 usuários</li><li><i class="fas fa-check text-green-500 mr-2"></i>Fluxo de caixa + conciliação</li><li><i class="fas fa-check text-green-500 mr-2"></i>Projetos ilimitados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Tarefas e equipe completa</li><li><i class="fas fa-check text-green-500 mr-2"></i>Gráficos e indicadores avançados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Mural de metas</li></ul><div class="mt-8"><a href="#cta-final" class="block text-center bg-blue-600 text-white font-bold py-2 rounded-xl shadow-md hover:bg-blue-700 transition">Teste grátis 14 dias</a></div></div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 pricing-card"><div class="text-center"><i class="fas fa-crown text-3xl text-purple-500"></i><h3 class="text-2xl font-bold mt-2">Premium</h3><p class="text-gray-500">Escalabilidade total</p><div class="mt-4"><span class="text-4xl font-extrabold">R$ 129</span><span class="text-gray-500">/mês</span></div></div><ul class="mt-6 space-y-3"><li><i class="fas fa-check text-green-500 mr-2"></i>Usuários ilimitados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Todos recursos Pro</li><li><i class="fas fa-check text-green-500 mr-2"></i>Suporte prioritário 24/7</li><li><i class="fas fa-check text-green-500 mr-2"></i>API e integrações exclusivas</li><li><i class="fas fa-check text-green-500 mr-2"></i>Relatórios personalizados</li><li><i class="fas fa-check text-green-500 mr-2"></i>Treinamento dedicado</li></ul><div class="mt-8"><a href="#cta-final" class="block text-center border border-purple-600 text-purple-600 font-semibold py-2 rounded-xl hover:bg-purple-50 transition">Assinar Premium</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final" class="gradient-bg text-white py-20 rounded-t-[3rem] rounded-b-[3rem] mx-5 md:mx-8 my-12 shadow-2xl">
+    <div class="max-w-4xl mx-auto text-center px-5">
+      <i class="fas fa-chart-line text-5xl text-blue-300 mb-4"></i>
+      <h2 class="text-3xl md:text-5xl font-bold">Pronto para decolar sua gestão?</h2>
+      <p class="text-blue-100 text-lg mt-4 opacity-90 max-w-xl mx-auto">Junte-se a mais de 2.500 empresas que já otimizam resultados com o FinanSys. Comece grátis agora.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#" class="bg-white text-gray-900 px-8 py-3 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition flex items-center gap-2"><i class="fas fa-envelope"></i> Cadastrar e-mail</a>
+        <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition flex items-center gap-2"><i class="fab fa-google"></i> Continuar com Google</a>
+      </div>
+      <p class="text-sm text-blue-200 mt-6">✓ 14 dias de teste grátis, sem compromisso. ✓ Cancelamento fácil.</p>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-white border-t border-gray-200 py-12">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="col-span-2"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center"><i class="fas fa-chart-line text-white text-sm"></i></div><span class="text-xl font-bold text-gray-800">FinanSys</span></div><p class="text-gray-500 text-sm mt-3">SaaS inteligente de gestão financeira + projetos + equipe. Transforme seu negócio.</p><div class="flex gap-4 mt-4 text-gray-500 text-xl"><i class="fab fa-instagram hover:text-blue-500 cursor-pointer"></i><i class="fab fa-linkedin hover:text-blue-500 cursor-pointer"></i><i class="fab fa-twitter hover:text-blue-500 cursor-pointer"></i></div></div>
+      <div><h4 class="font-bold text-gray-800">Produto</h4><ul class="mt-3 space-y-2 text-gray-500 text-sm"><li class="footer-link hover:text-blue-600 cursor-pointer">Funcionalidades</li><li class="footer-link hover:text-blue-600 cursor-pointer">Planos</li><li class="footer-link hover:text-blue-600 cursor-pointer">Segurança</li></ul></div>
+      <div><h4 class="font-bold text-gray-800">Empresa</h4><ul class="mt-3 space-y-2 text-gray-500 text-sm"><li class="footer-link hover:text-blue-600 cursor-pointer">Sobre nós</li><li class="footer-link hover:text-blue-600 cursor-pointer">Carreiras</li><li class="footer-link hover:text-blue-600 cursor-pointer">Blog</li></ul></div>
+      <div><h4 class="font-bold text-gray-800">Suporte</h4><ul class="mt-3 space-y-2 text-gray-500 text-sm"><li class="footer-link hover:text-blue-600 cursor-pointer">Central de ajuda</li><li class="footer-link hover:text-blue-600 cursor-pointer">Contato</li><li class="footer-link hover:text-blue-600 cursor-pointer">Status</li></ul></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-8 mt-8 border-t border-gray-100 text-center text-gray-400 text-xs">© 2025 FinControl - Gestão Empresarial. Todos os direitos reservados. CNPJ 12.345.678/0001-99</div>
+  </footer>
+
+  <!-- Simples JS para interação suave nos links -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if(href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
