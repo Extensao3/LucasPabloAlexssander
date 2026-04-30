@@ -27,7 +27,7 @@
 ## <span id="demo">🖼️ Demonstração</span>
 
 <p align="center">
-  <img src="assets/preview.png" alt="Preview do FinControl" width="800" style="border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+  <img width="1905" height="672" alt="image" src="https://github.com/user-attachments/assets/4d30fb6a-0e84-4e6b-9b25-b7a2c168307a" />
 </p>
 
 > 💡 *Se ainda não tem uma screenshot, você pode adicionar depois em `assets/preview.png`*
