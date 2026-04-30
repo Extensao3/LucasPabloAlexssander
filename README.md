@@ -1,96 +1,182 @@
-# FinControl — Landing Page de SaaS Financeiro (Protótipo)
+<p align="center">
+  <img src="https://img.shields.io/badge/status-protótipo-blue?style=for-the-badge&logo=figma">
+  <img src="https://img.shields.io/badge/licença-acadêmica-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/HTML5-Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript">
+</p>
 
-Projeto front-end (estático) que apresenta o **FinControl**, um conceito de plataforma SaaS para **gestão financeira + projetos + equipe** em um único ambiente.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=28&duration=3000&pause=500&color=2D6A4F&center=true&vCenter=true&width=500&lines=FinControl;Gestão+Financeira+%2B+Projetos+%2B+Equipe;SaaS+na+nuvem" alt="Typing SVG" />
+</p>
 
-A página foi construída no formato de **landing page** (apresentação de produto), com seções de valor, prova social, planos e uma área de **demonstração visual** via abas (Dashboard, Financeiro, Projetos, Equipe e Relatórios). Todo o conteúdo é **mock (dados fictícios)**, focado em UI/UX e apresentação.
+<h1 align="center">💰 FinControl — Landing Page de SaaS Financeiro</h1>
 
----
+<p align="center">
+  <strong>Um ambiente unificado para gestão financeira, projetos e equipe.</strong><br/>
+  Protótipo front-end estático com foco em UI/UX, animações e experiência de navegação fluida.
+</p>
 
-## Objetivo
+<p align="center">
+  <a href="#demo">📱 Demonstração</a> •
+  <a href="#seções">📌 Seções</a> •
+  <a href="#tecnologias">🛠️ Tecnologias</a> •
+  <a href="#como-executar">🚀 Como executar</a> •
+  <a href="#próximos-passos">🔮 Próximos passos</a>
+</p>
 
-- Servir como **apresentação do produto** (pitch/marketing) e vitrine visual.
-- Demonstrar uma **experiência de navegação fluida** (scroll suave, cards com hover, animações de entrada).
-- Simular, de forma visual, como seria um sistema de gestão integrado.
-
----
-
-## Principais seções da página
-
-- **Navbar** fixa com navegação por âncoras.
-- **Hero** com proposta de valor e CTA.
-- **Problemas/Dores** comuns de gestão (financeiro, equipe e projetos).
-- **Solução** (gestão unificada + SaaS na nuvem + decisões por dados).
-- **Funcionalidades** em **abas interativas**:
-  - Dashboard (KPIs, gráficos e atividades recentes)
-  - Financeiro (tabela de transações)
-  - Projetos (cards de status/progresso)
-  - Equipe (membros, produtividade e status)
-  - Relatórios (KPIs e indicadores)
-- **Depoimentos** (prova social simulada).
-- **Planos** (gratuito, pro e premium).
-- **CTA final** e **rodapé**.
+<br/>
 
 ---
 
-## Tecnologias utilizadas
+## 🖼️ Preview
 
-- **HTML5**
-- **CSS3** (arquivo próprio + utilitários)
-- **Tailwind CSS (CDN)**
-- **JavaScript (Vanilla)**
-  - Abas interativas (tabs)
-  - Scroll suave para âncoras
-  - Animações ao entrar no viewport (IntersectionObserver)
-- **Font Awesome** (ícones via CDN)
-- **Google Fonts — Inter**
+<p align="center">
+  <!-- Substitua pelo caminho da sua imagem -->
+  <img src="assets/preview.png" alt="Preview do FinControl" width="800" style="border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+</p>
 
-> Observação: como Tailwind e ícones são carregados por CDN, é necessário estar com **internet** para visualizar exatamente como no desenvolvimento.
+> 💡 *Se ainda não tem uma screenshot, você pode adicionar depois em `assets/preview.png` ou utilizar um serviço como [Picsum](https://picsum.photos/).*
 
 ---
 
-## Estrutura do projeto
+## 🎯 Objetivo do Projeto
 
-- `index.html` — Página principal (landing page completa + abas e scripts)
-- `style.css` — Estilos complementares (hover, botões, tabs, animações)
-- `tst.html` — Versão alternativa/rascunho (layout semelhante, com estilos inline)
+Servir como **vitrine visual** e **pitch de produto** para o **FinControl** — uma plataforma SaaS que integra:
 
----
+- 📊 **Dashboard** com KPIs e gráficos  
+- 💰 **Financeiro** com controle de transações  
+- 📁 **Projetos** com status e progresso  
+- 👥 **Equipe** com produtividade e membros  
+- 📈 **Relatórios** inteligentes  
 
-## Como executar
-
-### Opção 1 — Abrir direto no navegador
-
-1. Abra o arquivo `index.html` no navegador (Chrome/Edge/Firefox).
-
-### Opção 2 — VS Code (recomendado)
-
-1. Instale a extensão **Live Server** no VS Code.
-2. Clique com o botão direito em `index.html` → **Open with Live Server**.
+> Tudo em **um só lugar**, com dados **mockados** (fictícios) para demonstração de UI/UX.
 
 ---
 
-## Notas e limitações (por ser protótipo)
+## 📌 Seções da Landing Page
 
-- Não há back-end, banco de dados ou autenticação.
-- Os valores, gráficos e listas são **estáticos** (mock) e servem apenas para demonstração.
-- Algumas partes do texto/branding podem aparecer como **FinControl** e **FinanSys** (conteúdo de demonstração).
-
----
-
-## Próximos passos (se virar produto)
-
-- Transformar as abas em telas reais (SPA) com roteamento.
-- Persistência de dados (API + banco).
-- Login/controle de acesso (RBAC).
-- Painéis e relatórios dinâmicos.
+| Seção | Descrição |
+|-------|-----------|
+| **Hero** | Proposta de valor + CTA principal |
+| **Problemas** | Dores comuns (financeiro isolado, equipe desalinhada, projetos perdidos) |
+| **Solução** | Gestão unificada, nuvem, decisões baseadas em dados |
+| **Funcionalidades (abas)** | Dashboard / Financeiro / Projetos / Equipe / Relatórios — com conteúdo visual interativo |
+| **Depoimentos** | Prova social com cards de clientes fictícios |
+| **Planos** | Gratuito / Pro / Premium — com preços e benefícios |
+| **Rodapé** | Links institucionais e informações de contato |
 
 ---
 
-## Autor / Contexto acadêmico
+## 🧪 Demonstração das Abas
 
-Projeto desenvolvido com fins **acadêmicos** para apresentar a ideia de um SaaS de gestão (FinControl).
+As abas simulam a experiência de um sistema real:
 
-Se você quiser, eu também posso:
-- adicionar screenshots na pasta `assets/` e referenciar aqui,
-- padronizar o nome FinControl/FinanSys no HTML,
-- ou converter para um projeto com build (Tailwind via npm/Vite).
+- **Dashboard** → KPIs, gráfico de receitas x despesas, atividades recentes  
+- **Financeiro** → Tabela de transações com valores, categorias e status  
+- **Projetos** → Cards com andamento, prazo e responsável  
+- **Equipe** → Lista de membros, cargo, produtividade (barra de progresso)  
+- **Relatórios** → Indicadores sintéticos de performance  
+
+> 📌 *Tudo é estático e visual — ideal para apresentações e validação de conceito.*
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+<div align="center">
+
+| Tecnologia | Finalidade |
+|------------|-------------|
+| **HTML5** | Estrutura semântica |
+| **Tailwind CSS (CDN)** | Estilização rápida e responsiva |
+| **CSS3 personalizado** | Hovers, animações, tabs e detalhes |
+| **JavaScript (Vanilla)** | Abas interativas, scroll suave, IntersectionObserver |
+| **Font Awesome** | Ícones vetoriais |
+| **Google Fonts (Inter)** | Tipografia moderna |
+
+</div>
+
+> ⚠️ *Requer conexão com internet para carregar CDNs (Tailwind, Font Awesome, Google Fonts).*
+
+---
+
+## 🚀 Como Executar
+
+### 🔹 Opção 1 — Direto no navegador
+
+```bash
+# Basta abrir o arquivo index.html no Chrome, Edge ou Firefox
+```
+
+### 🔹 Opção 2 — VS Code (recomendado para desenvolvimento)
+
+```bash
+1. Instale a extensão "Live Server"
+2. Clique com botão direito no index.html → "Open with Live Server"
+```
+
+### 🔹 Opção 3 — Via terminal (Python)
+
+```bash
+python -m http.server 8000
+# Acesse http://localhost:8000
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+FinControl/
+│
+├── index.html          # Página principal (landing completa + abas)
+├── style.css           # Estilos complementares e animações
+├── tst.html            # Rascunho / versão alternativa
+├── assets/             # (opcional) Imagens, previews, ícones
+│   └── preview.png
+└── README.md           # Este arquivo
+```
+
+---
+
+## ⚠️ Notas e Limitações (Protótipo)
+
+- ❌ **Sem back-end, banco de dados ou autenticação**  
+- ✅ Dados 100% **mockados** (estáticos) → apenas para demonstração  
+- 🏷️ Alguns trechos podem mencionar "FinanSys" (variação de nome durante o desenvolvimento)  
+- 🎨 O foco é **UI/UX, animações e apresentação comercial** — não funcionalidade de sistema real.
+
+---
+
+## 🔮 Próximos Passos (em um produto real)
+
+- [ ] Transformar as abas em páginas SPA com roteamento  
+- [ ] Implementar **autenticação** (login + perfis)  
+- [ ] Conectar a **API REST** e banco de dados (PostgreSQL/Firebase)  
+- [ ] Tornar gráficos e relatórios **dinâmicos** (Chart.js ou D3.js)  
+- [ ] Adicionar **dark mode** e responsividade avançada  
+- [ ] Publicar em ambiente de staging (Vercel / Netlify)
+
+---
+
+## 👨‍💻 Contexto Acadêmico
+
+Projeto desenvolvido com fins **acadêmicos** para apresentar o conceito de um **SaaS de gestão integrada (FinControl)**.  
+Ideal para:
+
+- Portfólio de front-end  
+- Pitch de produto / validação de ideia  
+- Estudo de UI/UX com Tailwind e JavaScript vanilla  
+
+---
+
+## 📄 Licença
+
+Distribuído sob licença **acadêmica** — uso livre para estudos e apresentações, desde que mantidos os créditos.
+
+---
+
+<p align="center">
+  Feito com ☕ e código por <strong>FinControl Team</strong><br/>
+  <sub>✨ *Gerencie seu negócio como nunca antes — tudo em um só lugar.* ✨</sub>
+</p>
