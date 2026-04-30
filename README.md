@@ -30,8 +30,6 @@
   <img width="1905" height="672" alt="image" src="https://github.com/user-attachments/assets/4d30fb6a-0e84-4e6b-9b25-b7a2c168307a" />
 </p>
 
-> 💡 *Se ainda não tem uma screenshot, você pode adicionar depois em `assets/preview.png`*
-
 ---
 
 ## 🎯 Objetivo do Projeto
@@ -97,21 +95,12 @@ As abas simulam a experiência de um sistema real:
 
 ## <span id="como-executar">🚀 Como Executar</span>
 
-### 🔹 Opção 2 — VS Code (recomendado para desenvolvimento)
+### 🔹  VS Code (recomendado para desenvolvimento)
 
 ```bash
 1. Instale a extensão "Live Server"
 2. Clique com botão direito no index.html → "Open with Live Server"
 ```
-
-### 🔹 Opção 3 — Via terminal (Python)
-
-```bash
-python -m http.server 8000
-# Acesse http://localhost:8000
-```
-
----
 
 ## 📁 Estrutura do Projeto
 
@@ -120,7 +109,6 @@ FinControl/
 │
 ├── index.html          # Página principal (landing completa + abas)
 ├── style.css           # Estilos complementares e animações
-├── tst.html            # Rascunho / versão alternativa
 ├── assets/             # (opcional) Imagens, previews, ícones
 │   └── preview.png
 └── README.md           # Este arquivo
